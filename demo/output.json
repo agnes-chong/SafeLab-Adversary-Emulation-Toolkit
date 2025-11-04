@@ -1,0 +1,38 @@
+{
+  "scenario": "quick-test",
+  "started_at": "2025-11-04T00:00:00Z",
+  "finished_at": "2025-11-04T00:00:01Z",
+  "metadata": {
+    "host": "safelab-sample",
+    "platform": "SampleOS 1.0"
+  },
+  "events": [
+    {
+      "scenario": "quick-test",
+      "technique_id": "T1059",
+      "technique_name": "Execution: spawn_process",
+      "action": "spawn_process",
+      "timestamp": "2025-11-04T00:00:00Z",
+      "status": "success",
+      "evidence": "spawned sleep 0.1"
+    },
+    {
+      "scenario": "quick-test",
+      "technique_id": "T1033",
+      "technique_name": "Create benign file",
+      "action": "create_file",
+      "timestamp": "2025-11-04T00:00:00Z",
+      "status": "success",
+      "evidence": "wrote file /tmp/safelab_test_1699094400.txt"
+    },
+    {
+      "scenario": "quick-test",
+      "technique_id": "T1041",
+      "technique_name": "Simulate exfil (local POST)",
+      "action": "local_http_post",
+      "timestamp": "2025-11-04T00:00:01Z",
+      "status": "success",
+      "evidence": "Attempted POST to localhost (no server) - exception: Connection refused"
+    }
+  ]
+}
