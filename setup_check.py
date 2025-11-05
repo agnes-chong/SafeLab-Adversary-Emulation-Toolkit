@@ -34,7 +34,7 @@ REQUIRED_LIBS = [
     "requests",
     "jinja2",
     "flask",
-    "python_dateutil"
+    "dateutil"
 ]
 
 def check_dirs():
